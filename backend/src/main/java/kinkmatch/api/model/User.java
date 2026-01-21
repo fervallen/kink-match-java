@@ -24,7 +24,7 @@ public class User {
     private Role role = Role.USER;
 
     @Column(nullable = false, updatable = false)
-    private Instant createdAt = Instant.now();
+    private final Instant createdAt = Instant.now();
 
     public UUID getId() {
         return id;

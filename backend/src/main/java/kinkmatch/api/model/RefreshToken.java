@@ -33,7 +33,7 @@ public class RefreshToken {
     private boolean revoked = false;
 
     @Column(nullable = false, updatable = false)
-    private Instant createdAt = Instant.now();
+    private final Instant createdAt = Instant.now();
 
     private Instant revokedAt;
 
